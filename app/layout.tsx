@@ -10,15 +10,13 @@ const syne = Inter({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://www.example.com/"),
-    title: "Portfolio template - Eldora UI",
+    metadataBase: new URL("https://www.tomsarver.dev/"),
+    title: "Personal Portfolio - Tom Sarver",
     description:
-    "Eldora UI is a portfolio template built with React, Typescript, Tailwind CSS, and Framer Motion. 100% open-source, and customizable.",
+    "Tom Sarver is a software engineer specializing in full-stack web development. He is passionate about creating beautiful, responsive, and accessible web applications.",
     generator: "Next.js",
-    applicationName: "Portfolio template",
+    applicationName: "Personal Portfolio",
     keywords: [
-        "Portfolio template",
-        "Eldora UI",
         "React",
         "developer",
         "frontend",
@@ -41,9 +39,9 @@ export const metadata: Metadata = {
     ],
     colorScheme: "dark",
     openGraph: {
-        title: "Portfolio template - Eldora UI",
+        title: "Personal Portfolio - Tom Sarver",
         description:
-      "Eldora UI is a portfolio template built with React, Typescript, Tailwind CSS, and Framer Motion. 100% open-source, and customizable.",
+            "Tom Sarver is a software engineer specializing in full-stack web development. He is passionate about creating beautiful, responsive, and accessible web applications.",
         url: "https://www.eldoraui.site/",
         siteName: "www.eldoraui.site",
         images: [
@@ -56,15 +54,6 @@ export const metadata: Metadata = {
         ],
         locale: "en-US",
         type: "website",
-    },
-    twitter: {
-        card: "summary_large_image",
-        title: "Portfolio template - Eldora UI",
-        description:
-      "Portfolio template - Eldora UI is a portfolio template built with React, Typescript, Tailwind CSS, and Framer Motion. 100% open-source, and customizable.",
-        creator: "@karthikmudunuri",
-        creatorId: "0000000000",
-        images: ["./public/metadata.jpg"],
     },
     robots: {
         index: true,

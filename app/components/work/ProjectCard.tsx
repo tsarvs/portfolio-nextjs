@@ -11,6 +11,7 @@ import {BsLink45Deg} from "react-icons/bs";
 const ProjectCard = ({
     id,
     name,
+    role,
     description,
     technologies,
     techNames,
@@ -54,7 +55,7 @@ const ProjectCard = ({
                 >
                     {available ? (
                         <>
-                            <Link
+                            {github && <Link
                                 href={github}
                                 target="_blank"
                                 aria-label="Open GitHub Repository"
@@ -65,8 +66,8 @@ const ProjectCard = ({
                                 data-blobity-offset-y="4"
                                 data-blobity-magnetic="false">
                                 <SiGithub/>
-                            </Link>
-                            <Link
+                            </Link>}
+                            {demo && <Link
                                 href={demo}
                                 target="_blank"
                                 aria-label="Open Live Demo"
@@ -77,7 +78,7 @@ const ProjectCard = ({
                                 data-blobity-offset-y="4"
                                 data-blobity-magnetic="false">
                                 <BsLink45Deg/>
-                            </Link>
+                            </Link>}
                         </>
                     ) : (
                         <div></div>
@@ -97,6 +98,12 @@ const ProjectCard = ({
                         }
                         wordSpace={"mr-[0.25em]"}
                         charSpace={"-mr-[0.01em]"}
+                    />
+                    <AnimatedBody
+                        text={role}
+                        className={
+                            "mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-[#95979D] "
+                        }
                     />
                     <AnimatedBody
                         text={description}

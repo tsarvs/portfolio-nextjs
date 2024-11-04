@@ -95,10 +95,14 @@ const PreLoader: React.FC = () => {
                     height: "60px",
                 }}
             >
-                <span>Web Developer</span>
+                <span>Design</span>
                 <span> / </span>
-               
-                <span className="flex items-center justify-center gap-3"> Building  <Logo width={30} height={30} /> Eldora UI</span>
+                <span>Build</span>
+                <span> / </span>
+                <span>Debug</span>
+                <span> / </span>
+                <span>Deploy</span>
+
                 <div className="sub hidden"></div>
             </div>
         </div>
